@@ -4,6 +4,19 @@ for (let i = 1; i <= 10; i++) {
         console.log('  INNER LOOP', j);
     }
 }
+/* 10
+        8
+        6   
+        4
+        2
+        0
+    9
+        8
+        6
+        4
+        2
+        0.... */
+
 
 // EXAMPLE 2
 // Sum all elements in our 2048 board
@@ -13,6 +26,19 @@ const gameBoard = [
     [8, 32, 16, 4],
     [2, 8, 4, 2]
 ];
+
+/* following loop demonstrates how the inner loop completes a full iteration in one outer loop. Like example 1
+
+
+for(let i=0; i<gameBoard.length; i++){
+    let row=gameBoard[i];
+    console.log(row);
+    for (let j= 0; j<row.length; j ++){
+        console.log(row[j]);
+    }
+}
+
+*/
 
 let totalScore = 0;
 //outer loop iterates through the rows
