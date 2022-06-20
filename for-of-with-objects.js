@@ -29,3 +29,36 @@ for (let r of ratings) {
 }
 let avg = total / ratings.length;
 console.log('Average Rating: ', avg);
+
+
+
+//For..in example with jepardy constestants earnings
+
+const jeopardyWinnings = {
+    regularPlay: 2522700,
+    watsonChallenge: 300000,
+    tournamentOfChampions: 500000,
+    battleOfTheDecades: 1000000,
+};
+
+
+for (let prop in jeopardyWinnings) {
+    console.log(prop);
+    // regularPlay, watsonChallenge, tournamentOfChampions, battleOfTheDecade- will list all of the keys
+    console.log(jeopardyWinnings[prop]);
+    //will list the keys and the values -regualrPlay 2522700 etc
+
+}
+
+// If we wanted sum up his total earnings
+
+
+for (let prop in jeopardyWinnings) {
+    console.log(prop);
+    console.log(jeopardyWinnings[prop]);
+}
+let total = 0;
+for (let prop in jeopardyWinnings) {
+    total += jeopardyWinnings[prop];
+}
+console.log('Ken Jennings Total Earnings: ${total}');
