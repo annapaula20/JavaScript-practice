@@ -3,7 +3,7 @@ function rollDie() {
     console.log('Rolled : ${roll}');
 }
 
-function throwDice() {
+/*function throwDice() {
     rollDie();
     rollDie();
     rollDie();
@@ -11,4 +11,12 @@ function throwDice() {
     rollDie();
     rollDie();
     rollDie();
+}
+*/
+// Redoing the number of rolls using arguments
+
+function throwDice(numRolls) {
+    for (let i = 0; i < numRolls; i++) {
+        rollDie();
+    }
 }
