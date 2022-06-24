@@ -1,6 +1,6 @@
 function rollDie() {
     let roll = Math.floor(Math.random() * 6) + 1;
-    console.log('Rolled : ${roll}');
+    console.log(`Rolled : ${roll}`);
 }
 
 /*function throwDice() {
@@ -20,3 +20,10 @@ function throwDice(numRolls) {
         rollDie();
     }
 }
+throwDice(3) /*
+Rolled:4
+Rolled:6
+Rolled:2
+*/
+
+
