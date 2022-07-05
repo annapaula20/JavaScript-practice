@@ -21,6 +21,8 @@ function repeatNTimes(action, num) {
     }
 }
 
+
+
 repeatNTimes(rage, 13);
 
 // Accepts 2 functions as arguments
