@@ -5,3 +5,17 @@
 .pokemon img {
     display: block;
 }
+body{
+    background-color: red;
+}
+#container{
+    background-color: royalblue;
+    padding: 2em;
+}
+h1, span{
+    color:seashell;
+}
+h1{
+text-align: center;
+font-size: 3em;
+}
