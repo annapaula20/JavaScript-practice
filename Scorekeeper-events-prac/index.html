@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ping Pong ScoreBoard</title>
     <link rel="stylesheet" href="main.css">
-    <script src="app.js"></script>
 </head>
 
 <body>
@@ -16,12 +15,26 @@
             <img src="header.jpg" alt="ping ping table">
         </div>
         <h1>Ping Pong Score Keeper</h1>
+        <div id="scoreDiv">
+            <h2><span id="p1Display">0</span> to <span id="p2Display"> 0</span></h2>
+        </div>
+        <p id="smallfont">Use the buttons below to keep score.</p>
+        <p>Playing To:
+            <select name="" id="playTo">
+                <option value="3">3</option>
+                <option value="5">5</option>
+                <option value="7">7</option>
+                <option value="9">9</option>
+                <option value="11">11</option>
+            </select>
+        </p>
         <div>
             <button id="player1"> +1 Player One </button>
             <button id="player2"> +1 Player Two </button>
             <button id="reset">Reset</button>
         </div>
     </div>
+    <script src="app.js"></script>
 </body>
 
 </html>
